@@ -1,0 +1,219 @@
+/* Step2:
+* Reset Start
+*/
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+/* Step3:
+* Base Start
+*/
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: #eeeeee;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #e9fffc;
+  background-image:linear gradient (to right, white #429488);
+  background-image:linear gradient (to right, white 50%, 429488 50%);
+
+}
+
+/* Step4:
+* Utils Start
+*/
+.max-width {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* Step5-1:
+* header 容器設定 Start
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Step5-2:
+* header 左邊 Logo Start
+*/
+.header .logo {
+  position: relative;
+  left: -30px;
+}
+
+.header .logo a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 25px;
+  font-size: 0;
+  position: relative;
+  color: #666666;
+}
+
+.header .logo .brand {
+  font-size: 16px;
+}
+
+.header .logo__image {
+  width: 40px;
+  margin-right: 10px;
+  font-size: 0;
+}
+
+/* Step5-3:
+* header 右邊導覽列 Start
+*/
+
+.header__menu {
+  position: relative;
+  right: -15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.header__menu .header__menu__item {
+  list-style-type: none;
+}
+
+.header__menu__item+.header__menu__item {
+  margin-left: 15px;
+}
+
+.header__menu .header__menu__item a {
+  display: inline-block;
+  color: #000000;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+
+.header__menu .header__menu__item a:hover {
+  color: #333333;
+}
+
+
+/* Step6-1:
+* main 課程內容容器 Start
+*/
+.lecture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh;
+  position: relative;
+}
+
+/* Step6-2:
+* main 兩個主區塊的內容 Start
+*/
+.lecture__information,
+.lecture__main {
+  position: relative;
+  max-width: 25%;
+  min-width: 280px;
+  z-index: 1;
+  flex: 1 0 50%;
+}
+
+/* Step6-3:
+* main 中間的圖片 Start
+*/
+.lecture__image {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Step6-4:
+* main 左邊區塊的微調 Start
+*/
+
+.lecture__main .lecture__slogan {
+  font-size: 24px;
+  margin-bottom: .5em;
+}
+
+.lecture__paragraph {
+  margin-bottom: 10px;
+  line-height: 1.75;
+}
+
+.lecture__paragraph p {
+  color: #333333;
+}
+
+/* Step6-4:
+* main 右邊區塊的微調 Start
+*/
+
+.lecture__name {
+  font-size: 28px;
+  margin-bottom: 1em;
+  color: #309688;
+}
+
+.lecture__description {
+  margin-bottom: 40px;
+  line-height: 1.75;
+  text-align: justify;
+  color: #333333;
+}
+
+/* Step6-5:
+* main 的按鈕 Start
+*/
+
+.lecture__call-to-action {
+  display: flex;
+  margin-left: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 0;
+  background-color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.lecture__call-to-action a {
+  padding: 15px 45px;
+}

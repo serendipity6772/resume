@@ -1,0 +1,72 @@
+!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      第二天 CSS 範例 | 『從零開始・啟動你的程式魂』——
+      四堂課手把手打造超吸睛個人履歷網站
+    </title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header max-width">
+      <section class="logo">
+        <a href="/"
+          ><span
+            ><img src="./images/logo.svg" alt="Logo" class="logo__image"/></span
+          ><span class="brand">從零開始・啟動你的程式魂</span></a
+        >
+        <!-- CSS應用-標題背景色塊滑動填充效果 step1-->
+        <div class="logo__cover"></div>
+      </section>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu__item"><a href="#">HTML</a></li>
+          <li class="header__menu__item"><a href="#">CSS</a></li>
+          <li class="header__menu__item"><a href="#">jQuery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="lecture max-width">
+      <article class="lecture__information">
+        <h1 class="lecture__name">
+          四堂課，手把手打造<br />超吸睛個人履歷網站
+        </h1>
+        <div class="lecture__paragraph">
+          <h3>目標</h3>
+          <p>上完課能寫一個自己的網頁！</p>
+        </div>
+        <div class="lecture__paragraph">
+          <h3>日期</h3>
+          <p>8/10、8/11、8/17、8/18<br />09:00 - 17:30</p>
+        </div>
+        <div class="lecture__paragraph">
+          <h3>活動地點</h3>
+          <p>好想工作室（台南市東區北門路二段 16 號 L2A）</p>
+        </div>
+        <div class="lecture__paragraph">
+          <h3>講者</h3>
+          <p>Askie、Kira、Lai、Mango</p>
+        </div>
+      </article>
+      <article class="lecture__main">
+        <h2 class="lecture__slogan">Hello World !</h2>
+        <p class="lecture__description">
+          想要利用暑假學習網頁開發嗎？想要做出獨一無二的個人網頁履歷？今年暑假，跟著台南
+          IT 資訊聚落
+          -好想工作室一起程式吧！我們即將於台南開設四天完整扎實且簡單易懂的網頁開發入門課程，讓學程式和寫網頁不再遙不可及。我們渴望打開你學習的大門，除了教學，我們也會掏心掏肺分享我們的學習歷程、資源。跟著我們一起打開你的程式魂吧！
+        </p>
+        <button class="lecture__call-to-action">
+          <a
+            href="https://www.accupass.com/event/1907010717141524616930"
+            target="_blank"
+            >立刻報名</a
+          >
+        </button>
+      </article>
+      <img class="lecture__image" src="images/lecture_bg.svg" alt="" />
+    </main>
+  </body>
+</html>
